@@ -1,0 +1,10 @@
+html, body {
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+
+#translate {
+    width: 80%;
+    height: 30%;
+}
