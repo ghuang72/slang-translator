@@ -631,7 +631,7 @@ const translations = {
 		english: "like",
 		toronto: "rate",
 	},
-	"love ": {
+	love: {
 		english: "love ",
 		toronto: "rate",
 	},
@@ -850,6 +850,22 @@ const translations = {
 	see: {
 		english: "see",
 		toronto: "peep",
+	},
+	clown: {
+		english: "clown",
+		toronto: "bucktee",
+	},
+	happy: {
+		english: "happy",
+		toronto: "amped",
+	},
+	look: {
+		english: "look",
+		toronto: "pree",
+	},
+	looking: {
+		english: "looking",
+		toronto: "preeing",
 	},
 };
 
