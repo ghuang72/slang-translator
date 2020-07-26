@@ -9,7 +9,7 @@ function generateReplacement(originalText) {
 
   translatejson = chrome.runtime.getURL("json_toronto.json");
 
-  replacement = originalText;
+  replacement = str(originalText);
 
   for (var key in translatejson) {
     replacement = replacement.replace(key, translatejson[key].toronto);
