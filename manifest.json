@@ -1,20 +1,33 @@
 {
-  "name": "Extension Name",
-  "version": "1.0",
-  "description": "Slang translator feat. Urban Dictionary.",
-  "permissions": [
-    "declarativeContent",
-    "activeTab",
-    "storage"
-  ],
-  "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
-  },
-  "page_action": {
-    "default_popup": "popup.html"
-  },
-  "manifest_version": 2
+	"name": "Extension Name",
+	"version": "1.0",
+	"description": "Slang translator feat. Urban Dictionary.",
+	"permissions": [
+		"declarativeContent",
+		"activeTab",
+		"storage"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	],
+	"page_action": {
+		"default_popup": "popup.html"
+	},
+	"manifest_version": 2,
+	"web_accessible_resources": [
+		"./json_toronto.json"
+	]
 }
