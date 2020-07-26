@@ -835,6 +835,22 @@ const translations = {
     english: "i",
     toronto: "mans",
   },
+  funny: {
+    english: "funny",
+    toronto: "clownazz",
+  },
+  nah: {
+    english: "nah",
+    toronto: "nah bro",
+  },
+  toronto: {
+    english: "toronto",
+    toronto: "6ix",
+  },
+  see: {
+    english: "see",
+    toronto: "peep",
+  },
 };
 
 chrome.runtime.onMessage.addListener((tabs) => {
