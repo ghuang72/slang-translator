@@ -831,6 +831,10 @@ const translations = {
     english: "big",
     toronto: "dummy thick",
   },
+  i: {
+    english: "i",
+    toronto: "mans",
+  },
 };
 
 chrome.runtime.onMessage.addListener((tabs) => {
