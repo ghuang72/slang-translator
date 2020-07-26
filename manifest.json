@@ -1,7 +1,7 @@
 {
-	"name": "Extension Name",
+	"name": "6ixify",
 	"version": "1.0",
-	"description": "Slang translator feat. Urban Dictionary.",
+	"description": "Slang translator: from English to Toronto slang.",
 	"permissions": [
 		"declarativeContent",
 		"activeTab",
