@@ -850,3 +850,32 @@ chrome.runtime.onMessage.addListener((tabs) => {
     }
   }
 });
+
+var elements = document.getElementsByTagName("*");
+
+const translate = () => {
+  for (const element of elements) {
+    for (const node of element.childNodes) {
+      if (node.nodeType === 3) {
+        var oldText = node.nodeValue;
+        const newTextArray = [];
+        if (oldText) {
+          for (const word of oldText.split(" ")) {
+            if (word in translations) {
+              newTextArray.push(translations[word].toronto);
+            } else {
+              newTextArray.push(word);
+            }
+          }
+        }
+        const newText = newTextArray.join(" ");
+
+        if (newText !== oldText) {
+          element.replaceChild(document.createTextNode(newText), node);
+        }
+      }
+    }
+  }
+};
+
+translate();
