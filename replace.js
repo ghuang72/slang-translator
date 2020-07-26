@@ -2,16 +2,9 @@ function generateReplacement(originalText) {
   // loops through dictionary
   //run replace based on the key value map
   var replacement;
-  var fs = require("fs");
   var translatejson;
 
-  fs.readFile("json_toronto.json", "utf-8", (err, data) => {
-    if (data) {
-      translatejson = console.log(JSON.parse(data));
-    } else {
-      console.log(err);
-    }
-  });
+  translatejson = chrome.runtime.getUrl("json_toronto.json");
 
   for (var key in translatejson) {
     replacement = originalText.replace(key, translatejson[key].toronto);
