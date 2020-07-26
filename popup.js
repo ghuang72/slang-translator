@@ -1,10 +1,6 @@
 let translateButton = document.getElementById('translate');
-let selectedText = document.getElementById('selectedText');
-// let messageBox = document.querySelector('notranslate_5rpu')
-const ext = chrome.extension.getBackgroundPage()
-const url = chrome.runtime.getURL('./json_toronto.json')
 
-translateButton.onclick = async event => {
+translateButton.onclick = async () => {
 	chrome.tabs.query({
 		active: true,
 		currentWindow: true
