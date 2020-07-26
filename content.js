@@ -915,8 +915,9 @@ const translate = () => {
 				const newTextArray = [];
 				if (oldText) {
 					for (const word of oldText.split(" ")) {
-						if (word in translations) {
-							newTextArray.push(translations[word].toronto);
+						let lowercase = word.toLowerCase()
+						if (lowercase in translations) {
+							newTextArray.push(translations[lowercase].toronto);
 						} else {
 							newTextArray.push(word);
 						}
