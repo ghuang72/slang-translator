@@ -851,6 +851,22 @@ const translations = {
     english: "see",
     toronto: "peep",
   },
+  clown: {
+    english: "clown",
+    toronto: "bucktee",
+  },
+  happy: {
+    english: "happy",
+    toronto: "amped",
+  },
+  look: {
+    english: "look",
+    toronto: "pree",
+  },
+  looking: {
+    english: "looking",
+    toronto: "preeing",
+  },
 };
 
 chrome.runtime.onMessage.addListener((tabs) => {
