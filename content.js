@@ -781,7 +781,7 @@ const translations = {
   },
   LOL: {
     english: "LOL",
-    toronto: "YO STOOOOP THISSSS",
+    toronto: "yo STOOOOP THIS",
   },
   LMAO: {
     english: "LMAO",
@@ -818,6 +818,18 @@ const translations = {
   help: {
     english: "help",
     toronto: "bless",
+  },
+  ok: {
+    english: "ok",
+    toronto: "ahlie",
+  },
+  connect: {
+    english: "connect",
+    toronto: "link",
+  },
+  big: {
+    english: "big",
+    toronto: "dummy thick",
   },
 };
 
