@@ -1,8 +1,9 @@
 function generateReplacement(originalText) {
   // loops through dictionary
   //run replace based on the key value map
+  var replacement;
   for (var key in translatejson) {
-    var replacement = originalText.replace(key, translatejson.key);
+    replacement = originalText.replace(key, translatejson[key]);
   }
 
   return replacement;
