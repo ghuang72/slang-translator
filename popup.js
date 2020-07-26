@@ -3,14 +3,16 @@ let selectedText = document.getElementById("selectedText");
 
 function generateReplacement(originalText) {
   // loops through dictionary
-  //run replace based on the key value map
+  // run replace based on the key value map
   var replacement;
   var translatejson;
 
   translatejson = chrome.runtime.getURL("json_toronto.json");
 
+  replacement = originalText;
+
   for (var key in translatejson) {
-    replacement = originalText.replace(key, translatejson[key].toronto);
+    replacement = replacement.replace(key, translatejson[key].toronto);
   }
 
   return replacement;
