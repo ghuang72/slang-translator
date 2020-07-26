@@ -1,6 +1,11 @@
 function generateReplacement(originalText) {
   // loops through dictionary
-  //
+  //run replace based on the key value map
+  for (key in translatejson) {
+    var replacement = originalText.replace(key, translatejson.key);
+  }
+
+  return replacement;
 }
 
 function translateText() {
