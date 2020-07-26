@@ -199,7 +199,7 @@ const translations = {
 		english: "cool",
 		toronto: "slime",
 	},
-	"I know": {
+	"i know": {
 		english: "I know",
 		toronto: "dun kno",
 	},
@@ -775,11 +775,11 @@ const translations = {
 		english: "shoe",
 		toronto: "kick",
 	},
-	LOL: {
+	lol: {
 		english: "LOL",
 		toronto: "yo STOOOOP THIS",
 	},
-	LMAO: {
+	lmao: {
 		english: "LMAO",
 		toronto: "BROOOO",
 	},
@@ -875,6 +875,15 @@ const translateMessages = () => {
 		if (element.innerHTML) {
 			var oldText = element.innerHTML;
 			var newTextArray = [];
+			if (oldText.split(' ').length === 2) {
+				let lowercase = oldText.toLowerCase()
+				if (lowercase in translations) {
+					element.innerHTML = isUpperCase(oldText)
+						? translations[lowercase].toronto.toUpperCase()
+						: translations[lowercase].toronto
+					continue
+				}
+			}
 			for (word of oldText.split(" ")) {
 				let lowercase = word.toLowerCase()
 				if (lowercase in translations) {
