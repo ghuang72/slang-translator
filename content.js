@@ -631,7 +631,7 @@ const translations = {
     english: "like",
     toronto: "rate",
   },
-  "love ": {
+  love: {
     english: "love ",
     toronto: "rate",
   },
